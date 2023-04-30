@@ -1,4 +1,12 @@
+// ---------------------------------------------------------------
+// Copyright (c) Pritom Purkayasta All rights reserved.
+// FREE TO USE TO CONNECT THE WORLD
+// ---------------------------------------------------------------
+
+
+
 using Forismatic.Core;
+
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Forismatic.Installer
@@ -13,8 +21,8 @@ namespace Forismatic.Installer
                 configure.BaseAddress = new Uri(ForismaticConfigurationKeys.BaseAddress);
             });
 
-            serviceCollection.AddScoped<ForismaticRestClient>();
-            serviceCollection.AddScoped<IForismaticApiClient, ForismaticApiClient>();
+            serviceCollection.AddSingleton<IForismaticRestClient, ForismaticRestClient>();
+            serviceCollection.AddSingleton<IForismaticApiClient, ForismaticApiClient>();
 
             return serviceCollection;
         }

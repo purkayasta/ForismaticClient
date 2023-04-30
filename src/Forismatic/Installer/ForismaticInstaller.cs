@@ -1,10 +1,17 @@
+// ---------------------------------------------------------------
+// Copyright (c) Pritom Purkayasta All rights reserved.
+// FREE TO USE TO CONNECT THE WORLD
+// ---------------------------------------------------------------
+
+
+
 using Forismatic.Core;
 
 namespace Forismatic.Installer
 {
     public class ForismaticInstaller
     {
-        public static IForismaticApiClient CreateService()
+        public static IForismaticApiClient CreateClient()
         {
             return Create(new HttpClient());
         }

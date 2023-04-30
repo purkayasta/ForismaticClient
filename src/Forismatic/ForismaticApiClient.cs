@@ -1,4 +1,10 @@
-using System.Net.Http.Json;
+// ---------------------------------------------------------------
+// Copyright (c) Pritom Purkayasta All rights reserved.
+// FREE TO USE TO CONNECT THE WORLD
+// ---------------------------------------------------------------
+
+
+
 using Forismatic.Core;
 using Forismatic.Models;
 
